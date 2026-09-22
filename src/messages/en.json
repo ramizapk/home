@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "title": "Ramiz Ali Mohammed — Full-Stack Software Engineer | Next.js • Laravel • C#",
+    "description": "Portfolio of Ramiz Ali Mohammed — a results-driven Software Engineer with 4+ years crafting scalable web platforms, enterprise systems, and production-grade APIs using Next.js, Laravel, and C#."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Ramiz Ali",
+    "title": "Software Engineer",
+    "tagline": "I engineer the full picture — from sleek, responsive interfaces to powerful backends and APIs that scale. Every line of code I write is built to perform, built to last, and built to impress.",
+    "cta": "Explore Projects",
+    "ctaResume": "Download CV",
+    "scroll": "Scroll down"
+  },
+  "magazine": {
+    "vol": "VOL. 26 // ISSUE 04",
+    "edition": "ENGINEERING ARCHIVES",
+    "status": "OPEN TO CONTRACTS & FULL-TIME",
+    "location": "ADEN, YE ",
+    "roleLabel": "FULL-STACK SOFTWARE ENGINEER",
+    "yearsExp": "4+ YRS EXPERIENCE",
+    "specialty": "NEXT.JS • LARAVEL • C# • ENTERPRISE SYSTEMS"
+  },
+  "terminal": {
+    "title": "ENGINEERING STACK",
+    "file": "engineer.config.ts",
+    "copied": "Copied to clipboard!",
+    "copy": "Copy Code",
+    "run": "Run Diagnostics",
+    "status": "All systems operational (99.99% uptime)"
+  },
+  "github": {
+    "title": "CODE ACTIVITY & REPOS",
+    "contributions": "Consistent open-source contributor on GitHub",
+    "streak": "Production-tested & battle-proven code",
+    "active": "Full-Stack Development",
+    "repoCount": "ramizapk.github.io"
+  },
+  "profile": {
+    "name": "Ramiz Ali Mohammed",
+    "title": "SOFTWARE ENGINEER",
+    "location": "Aden, Yemen ",
+    "available": "Available for New Opportunities"
+  },
+  "stats": {
+    "experience": "Years Experience",
+    "projects": "Shipped Projects",
+    "clients": "Client Satisfaction",
+    "cta": "Contact Me Directly"
+  },
+  "skills": {
+    "title": "Technical Arsenal",
+    "subtitle": "Battle-tested technologies powering production systems",
+    "categories": {
+      "frontend": "Frontend Development",
+      "backend": "Backend & Database",
+      "devops": "Architecture & Tools"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Production platforms serving real users — architected, built, and deployed",
+    "explore": "Visit Live Website",
+    "viewAll": "View All Projects",
+    "items": [
+      {
+        "title": "Washly",
+        "subtitle": "Multi-Vendor Laundry Platform",
+        "description": "Architected and built from the ground up — a comprehensive multi-vendor laundry services marketplace. Engineered the full stack: secure RESTful APIs, relational database architecture, real-time order tracking, merchant management dashboards, and a seamless customer booking experience.",
+        "tech": [
+          "Next.js",
+          "Laravel",
+          "Tailwind CSS",
+          "MySQL",
+          "REST APIs"
+        ],
+        "metric": "Built From Scratch · Full-Stack",
+        "image": "/images/project-washly.jpg",
+        "url": "https://washly.salasah.sa/"
+      },
+      {
+        "title": "Makhzoon",
+        "subtitle": "Multi-Merchant E-Commerce + POS",
+        "description": "Engineered a complete multi-merchant e-commerce ecosystem from scratch — integrated with an in-store Point-of-Sale system featuring barcode scanning, live inventory sync across channels, multi-payment gateway processing, and automated vendor settlement workflows.",
+        "tech": [
+          "Next.js",
+          "Laravel",
+          "POS System",
+          "MySQL",
+          "REST APIs"
+        ],
+        "metric": "E-Commerce + POS · Full-Stack",
+        "image": "/images/project-makhzoon.jpg",
+        "url": "https://makhzoon.salasah.sa/"
+      },
+      {
+        "title": "Had Delivery",
+        "subtitle": "On-Demand Delivery Platform",
+        "description": "Designed and built the entire backend architecture and RESTful API layer for an on-demand courier platform. Implemented real-time GPS driver tracking, intelligent order dispatching algorithms, push notifications via FCM, and high-concurrency transaction handling.",
+        "tech": [
+          "Laravel",
+          "RESTful APIs",
+          "MySQL",
+          "Real-time GPS",
+          "FCM"
+        ],
+        "metric": "API & Backend Architecture",
+        "image": "/images/project-had.jpg",
+        "url": "https://play.google.com/store/apps/details?id=com.had.customer&hl=en_US"
+      },
+      {
+        "title": "Ejar",
+        "subtitle": "Heavy Equipment Rental Marketplace",
+        "description": "Developed the complete frontend interface and user experience for an enterprise equipment rental marketplace — connecting contractors with heavy machinery owners through real-time availability calendars, booking workflows, and digital contract management.",
+        "tech": [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "REST APIs"
+        ],
+        "metric": "Frontend Engineering",
+        "image": "/images/project-connecthub.jpg",
+        "url": "https://ejar.salasah.sa/"
+      },
+      {
+        "title": "Salasa Go",
+        "subtitle": "Interactive EdTech Platform",
+        "description": "Co-architected and developed core modules for an interactive educational platform — including student progress analytics, course management systems, automated assessment engines, and instructor dashboards with real-time engagement metrics.",
+        "tech": [
+          "Next.js",
+          "React",
+          "Laravel",
+          "MySQL"
+        ],
+        "metric": "Core Development Contributor",
+        "image": "/images/project-taskflow.jpg",
+        "url": "https://salasahgo.com/"
+      },
+      {
+        "title": "Talio Live",
+        "subtitle": "Children's Interactive Learning",
+        "description": "Designed and implemented engaging, child-friendly UI/UX interfaces for a digital learning platform — featuring interactive animations, gamified learning paths, progress rewards, and accessibility-first responsive design for all devices.",
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Figma UI/UX"
+        ],
+        "metric": "UI/UX & Frontend Design",
+        "image": "/images/project-ecotrack.jpg",
+        "url": "https://talio.live/"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Professional Journey",
+    "items": [
+      {
+        "role": "Software Engineer",
+        "company": "Salasa",
+        "period": "2025 — Present | Remote",
+        "description": "Lead engineer driving the full product lifecycle — architecting and shipping multiple enterprise-grade platforms from zero to production. Designing scalable database schemas, building robust APIs, and delivering polished frontend experiences using Next.js, Laravel, and C#."
+      },
+      {
+        "role": "Freelance Software Developer",
+        "company": "Independent",
+        "period": "2021 — 2024 | Remote",
+        "description": "Delivered diverse full-stack solutions for clients across multiple industries — from e-commerce platforms and management systems to mobile app backends and RESTful API architectures. Owned the complete SDLC from requirements gathering through deployment and maintenance."
+      },
+      {
+        "role": "Software Developer",
+        "company": "Emirates Red Crescent",
+        "period": "2019 — 2020 | Aden, Yemen",
+        "description": "Engineered mission-critical internal systems from scratch for humanitarian operations — including archiving platforms, inventory management tools, and coordination systems. Delivered secure, reliable software under real-world operational constraints."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Trust & Impact",
+    "items": [
+      {
+        "quote": "Ramiz has been instrumental in engineering multiple platforms for us from the ground up — each one delivered with exceptional speed, clean architecture, and production-grade reliability. His mastery of Laravel, Next.js, and system design consistently exceeds expectations.",
+        "name": "Salasa Engineering Team",
+        "role": "Tech Lead, Salasa",
+        "avatar": "SL"
+      },
+      {
+        "quote": "The backend systems and API architectures Ramiz built for us handled real-world traffic flawlessly — fast, secure, and built to scale. His ability to own the full stack from database to deployment is truly rare.",
+        "name": "Client Engineering Team",
+        "role": "Product Manager",
+        "avatar": "CE"
+      }
+    ]
+  },
+  "quote": {
+    "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "author": "Martin Fowler"
+  },
+  "contact": {
+    "title": "LET'S BUILD",
+    "titleHighlight": "TOGETHER",
+    "subtitle": "Have a project idea, need a reliable Full-Stack Engineer, or looking for your next hire? I'd love to hear about it. Let's turn your vision into production-ready software.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Tell me about your project...",
+      "send": "Send Message"
+    },
+    "info": {
+      "email": "ramiz.apk7@gmail.com",
+      "phone": "+967 777366265",
+      "linkedin": "linkedin.com/in/ramiz-apk",
+      "github": "github.com/ramizapk"
+    }
+  },
+  "social": {
+    "title": "Connect With Me",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "twitter": "WhatsApp",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© 2026 Ramiz Ali Mohammed. All rights reserved.",
+    "made": "Crafted with Next.js, Tailwind CSS & clean architecture"
+  }
+}

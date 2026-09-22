@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+/* ================================
+   DESIGN SYSTEM — Magazine Portfolio
+   ================================ */
+
+@theme {
+  /* Color Palette — High-Contrast Editorial Light */
+  --color-cream: #F8F6F0;
+  --color-cream-dark: #EDE8DE;
+  --color-warm-white: #FFFFFF;
+  --color-sage: #2D7A58;
+  --color-sage-light: #4E9B78;
+  --color-sage-dark: #1E543C;
+  --color-sage-bg: #EBF5F0;
+  --color-terracotta: #DE5D35;
+  --color-terracotta-light: #EA7C58;
+  --color-terracotta-dark: #B94522;
+  --color-terracotta-bg: #FDF1ED;
+  --color-amber: #D97706;
+  --color-navy: #111827;
+  --color-navy-light: #1F2937;
+  --color-charcoal: #4B5563;
+  --color-sand: #DDD6C8;
+  --color-sand-light: #EFECE6;
+  --color-sand-dark: #C4BAA8;
+
+  /* Font Families — Premium Modern */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-arabic: 'Tajawal', sans-serif;
+
+  /* Border Radius */
+  --radius-card: 18px;
+  --radius-button: 10px;
+  --radius-badge: 6px;
+  --radius-full: 9999px;
+
+  /* Shadows — Subtle, deep, modern */
+  --shadow-card: 0 1px 3px rgba(17, 24, 39, 0.04), 0 6px 16px -2px rgba(17, 24, 39, 0.05);
+  --shadow-card-hover: 0 12px 32px -4px rgba(17, 24, 39, 0.12), 0 4px 12px rgba(17, 24, 39, 0.04);
+  --shadow-elevated: 0 20px 40px -8px rgba(17, 24, 39, 0.15);
+
+  /* Grid */
+  --grid-gap: 14px;
+
+  /* Animations */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-normal: 0.35s;
+  --duration-slow: 0.5s;
+}
+
+/* ================================
+   BASE STYLES & EDITORIAL TEXTURE
+   ================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-navy);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(17, 24, 39, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Arabic typography — Tajawal: compact, tight metrics, no overlap */
+[dir="rtl"] body {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  font-family: 'Tajawal', sans-serif !important;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .font-mono {
+  font-family: var(--font-mono), 'Tajawal', monospace;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-terracotta);
+  color: white;
+}
+
+/* ================================
+   BENTO CARD BASE
+   ================================ */
+
+.bento-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-card);
+  padding: 22px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(221, 214, 200, 0.85);
+  transition: all var(--duration-normal) var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.bento-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: rgba(222, 93, 53, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Subtle corner registration marks for editorial feel */
+.bento-card::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid rgba(17, 24, 39, 0.15);
+  border-right: 1px solid rgba(17, 24, 39, 0.15);
+  pointer-events: none;
+}
+
+[dir="rtl"] .bento-card::after {
+  right: auto;
+  left: 6px;
+  border-right: none;
+  border-left: 1px solid rgba(17, 24, 39, 0.15);
+}
+
+/* Card content containers handle their own z-index and positioning */
+
+/* ================================
+   SPECIAL CARD VARIANTS
+   ================================ */
+
+.card-sage {
+  background: linear-gradient(145deg, #247158 0%, #174E3C 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px -4px rgba(36, 113, 88, 0.3);
+}
+
+.card-sage:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 14px 32px -4px rgba(36, 113, 88, 0.4);
+}
+
+.card-navy {
+  background: linear-gradient(145deg, #111827 0%, #0B0F19 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 24px -4px rgba(17, 24, 39, 0.4);
+}
+
+.card-navy:hover {
+  border-color: rgba(222, 93, 53, 0.4);
+  box-shadow: 0 14px 32px -4px rgba(17, 24, 39, 0.5);
+}
+
+.card-terracotta {
+  background: linear-gradient(145deg, #DE5D35 0%, #B8431E 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px -4px rgba(222, 93, 53, 0.3);
+}
+
+.card-terracotta:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 14px 32px -4px rgba(222, 93, 53, 0.45);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(221, 214, 200, 0.9);
+}
+
+/* ================================
+   TYPING EFFECT
+   ================================ */
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--color-sage);
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  max-width: fit-content;
+}
+
+/* ================================
+   MAGAZINE DIVIDER
+   ================================ */
+
+.mag-divider {
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-terracotta);
+  border-radius: 2px;
+}
+
+/* ================================
+   SCROLLBAR
+   ================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-charcoal);
+}
+
+/* ================================
+   CUSTOM ANIMATIONS & MARQUEE
+   ================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+[dir="rtl"] .animate-marquee {
+  animation-direction: reverse;
+}
+
+/* ================================
+   RESPONSIVE UTILITIES
+   ================================ */
+
+@media (max-width: 768px) {
+  .bento-card {
+    padding: 20px;
+  }
+
+  :root {
+    --grid-gap: 12px;
+  }
+}
